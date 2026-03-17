@@ -57,12 +57,11 @@ adicionarCarrinho(produtoUm, 1);
 adicionarCarrinho(produtoDois);
 adicionarCarrinho(produtoTres);
 adicionarCarrinho(produtoUm, 2);
-const total = calcularTotal(carrinho);
-console.log(`💰 Total da compra: R$ ${total}`);
 function finalizarCompra() {
     const total = calcularTotal(carrinho);
     return `🧾 Total da compra: R$ ${total}`;
 }
 const resultadoFinal = finalizarCompra();
+// finalizarCompra + 10; !! da erro pois resultado final é string
 console.log(resultadoFinal);
 //# sourceMappingURL=loja.js.map
